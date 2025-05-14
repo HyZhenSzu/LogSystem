@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Code/LogSystem/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

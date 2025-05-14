@@ -1,0 +1,3 @@
+C:/Code/LogSystem/build/CMakeFiles/my_LogSystem.dir
+C:/Code/LogSystem/build/CMakeFiles/edit_cache.dir
+C:/Code/LogSystem/build/CMakeFiles/rebuild_cache.dir

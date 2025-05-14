@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Code/LogSystem/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/my_LogSystem.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\my_LogSystem.dir\\src\\Logger.cpp.obj -c C:\\Code\\LogSystem\\src\\Logger.cpp",
+  "file": "C:/Code/LogSystem/src/Logger.cpp",
+  "output": "CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj"
+},
+{
+  "directory": "C:/Code/LogSystem/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/my_LogSystem.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\my_LogSystem.dir\\src\\main.cpp.obj -c C:\\Code\\LogSystem\\src\\main.cpp",
+  "file": "C:/Code/LogSystem/src/main.cpp",
+  "output": "CMakeFiles/my_LogSystem.dir/src/main.cpp.obj"
+}
+]
