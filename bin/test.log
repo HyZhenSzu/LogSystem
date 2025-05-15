@@ -1,5 +1,1 @@
-2025-05-15 13:41:45 DEBUG C:\Code\LogSystem\src\main.cpp:12 Hello World! This is a debug message.
-2025-05-15 13:41:45 INFO C:\Code\LogSystem\src\main.cpp:13 My name is Hyzhen. This is a info.
-2025-05-15 13:41:45 WARNING C:\Code\LogSystem\src\main.cpp:14 I always see warnings when coding.
-2025-05-15 13:41:45 ERROR C:\Code\LogSystem\src\main.cpp:15 I hate errors, but we can't avoid them.
-2025-05-15 13:41:45 FATAL C:\Code\LogSystem\src\main.cpp:16 fatal errors, I don't want to see them.
+2025-05-15 15:02:59 FATAL C:\Code\LogSystem\src\main.cpp:18 Fatal errors, I don't want to see them.

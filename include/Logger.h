@@ -17,7 +17,7 @@ namespace Utility{
 
     #define error(format, ...) \
         Logger::getInstance()->log(Logger::LogLevel::ERROR, __FILE__, __LINE__, format, ##__VA_ARGS__);
-        
+
     #define fatal(format, ...) \
         Logger::getInstance()->log(Logger::LogLevel::FATAL, __FILE__, __LINE__, format, ##__VA_ARGS__);
 
@@ -39,10 +39,12 @@ namespace Utility{
 
         // 日志内容：时间、级别、文件名、行号、错误信息
         void log(LogLevel level, const char *filename, int line, const char *format, ...);
-
+        void setLevel(LogLevel level);
+        void setMaxLength(int maxLength);
         static Logger *getInstance();
         void open(std::string fileName);
         void close();
+        void rotate();
 
     private:
         Logger();
@@ -51,6 +53,10 @@ namespace Utility{
     private:
         std::string m_fileName;
         std::ofstream m_fOut;
+        LogLevel m_level;
+        int m_maxLength;
+        int m_currentLength;
+
         // when you want to get the log level name, just use s_level[int(level)].
         static const char *s_level[int(LogLevel::LEVEL_COUNT)];
 

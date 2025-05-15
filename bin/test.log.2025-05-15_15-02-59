@@ -1,0 +1,4 @@
+2025-05-15 14:54:53 INFO C:\Code\LogSystem\src\main.cpp:15 My name is Hyzhen. This is a info.
+2025-05-15 14:54:53 WARNING C:\Code\LogSystem\src\main.cpp:16 I always see warnings when coding.
+2025-05-15 14:54:53 ERROR C:\Code\LogSystem\src\main.cpp:17 I hate errors, but we can't avoid them.
+2025-05-15 15:02:59 DEBUG C:\Code\LogSystem\src\main.cpp:14 Hello World! This is a debug message.
