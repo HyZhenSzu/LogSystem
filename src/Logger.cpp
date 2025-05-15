@@ -23,7 +23,22 @@ void Logger::log(LogLevel level, const char *filename, int line, const char *for
     char timestamp[32];
     memset(timestamp, 0, sizeof(timestamp));
     strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", ptm);
-    std::cout << timestamp << " file: " << filename << " line: " << line << "\n" << std::flush;
+    // std::cout << timestamp << " " << s_level[int(level)] << " " << filename << ":" << line << "\n" << std::flush;
+
+    // format the log message
+    const char* formatStr = "%s %s %s:%d\n";
+    int size = snprintf(nullptr, 0, formatStr, timestamp, s_level[int(level)], filename, line);
+    if(size > 0)
+    {
+        char *buffer = new char[size + 1];
+        snprintf(buffer, size + 1, formatStr, timestamp, s_level[int(level)], filename, line);
+        buffer[size] = '\0';
+
+        std::cout << buffer << std::flush;
+        m_fOut << buffer;
+        delete[] buffer;
+    }
+    m_fOut << std::flush;
 }
 
 
