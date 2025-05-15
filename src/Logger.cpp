@@ -2,6 +2,30 @@
 
 using namespace Hyzhen::Utility;
 
+#include <stdexcept>
+#include <time.h>
+#include <string.h>
+#include <iostream>
+
+
+void Logger::log(LogLevel level, const char *filename, int line, const char *format, ...)
+{
+    if(m_fOut.fail())
+    {
+        throw std::logic_error("Failed to open file: " + m_fileName);
+    }
+
+    // get current time
+    time_t ticks = time(NULL);
+    struct tm *ptm = localtime(&ticks);
+
+    // format the timestamp
+    char timestamp[32];
+    memset(timestamp, 0, sizeof(timestamp));
+    strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", ptm);
+    std::cout << timestamp << " file: " << filename << " line: " << line << "\n" << std::flush;
+}
+
 
 void Logger::open(std::string fileName)
 {

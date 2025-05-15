@@ -23,7 +23,7 @@ namespace Utility{
         };
 
         // 日志内容：时间、级别、文件名、行号、错误信息
-        // void log(LogLevel level, const char *filename, int line, const char *format, ...);
+        void log(LogLevel level, const char *filename, int line, const char *format, ...);
 
         static Logger *getInstance();
         void open(std::string fileName);

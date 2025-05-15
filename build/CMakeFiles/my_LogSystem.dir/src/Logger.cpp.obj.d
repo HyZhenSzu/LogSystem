@@ -138,4 +138,7 @@ CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/codecvt.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/fstream.tcc
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/fstream.tcc \
+ C:/mingw64/x86_64-w64-mingw32/include/string.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/iostream
