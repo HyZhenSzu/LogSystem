@@ -5,6 +5,7 @@ using namespace Hyzhen::Utility;
 #include <stdexcept>
 #include <time.h>
 #include <string.h>
+#include <stdarg.h>
 #include <iostream>
 
 
@@ -26,19 +27,36 @@ void Logger::log(LogLevel level, const char *filename, int line, const char *for
     // std::cout << timestamp << " " << s_level[int(level)] << " " << filename << ":" << line << "\n" << std::flush;
 
     // format the log message
-    const char* formatStr = "%s %s %s:%d\n";
+    const char* formatStr = "%s %s %s:%d ";
     int size = snprintf(nullptr, 0, formatStr, timestamp, s_level[int(level)], filename, line);
     if(size > 0)
     {
         char *buffer = new char[size + 1];
         snprintf(buffer, size + 1, formatStr, timestamp, s_level[int(level)], filename, line);
-        buffer[size] = '\0';
+        buffer[size] = 0;
 
-        std::cout << buffer << std::flush;
+        // std::cout << buffer << std::flush;
         m_fOut << buffer;
         delete[] buffer;
     }
-    m_fOut << std::flush;
+
+    // format the log content
+    va_list arg_ptr;
+    va_start(arg_ptr, format);
+    size = vsnprintf(nullptr, 0, format, arg_ptr);
+    va_end(arg_ptr);
+    if(size > 0)
+    {
+        char *content = new char[size + 1];
+        va_start(arg_ptr, format);
+        vsnprintf(content, size + 1, format, arg_ptr);
+        va_end(arg_ptr);
+        m_fOut << content;
+        delete[] content;
+    }
+
+    m_fOut << "\n";
+    m_fOut.flush();
 }
 
 

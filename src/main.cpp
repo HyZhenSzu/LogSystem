@@ -7,6 +7,7 @@ int main()
 {
     Logger::getInstance()->open("./test.log");
     Logger::getInstance()->log(Logger::LogLevel::DEBUG, __FILE__, __LINE__, "Hello World!");
+    Logger::getInstance()->log(Logger::LogLevel::DEBUG, __FILE__, __LINE__, "My name is Hyzhen!");
     Logger::getInstance()->close();
     return 0;
 }

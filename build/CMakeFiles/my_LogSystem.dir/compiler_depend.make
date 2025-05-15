@@ -103,6 +103,7 @@ CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: C:/Code/LogSystem/src/Logger.cpp
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/limits.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/mm_malloc.h \
+  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stdarg.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stddef.h \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/syslimits.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -110,6 +111,7 @@ CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: C:/Code/LogSystem/src/Logger.cpp
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
   C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_startup.h \
@@ -134,6 +136,7 @@ CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: C:/Code/LogSystem/src/Logger.cpp
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/signal.h \
+  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
@@ -506,6 +509,8 @@ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/limits.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/mm_malloc.h:
 
+C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stdarg.h:
+
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stddef.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/sys/types.h:
@@ -516,9 +521,13 @@ C:/mingw64/x86_64-w64-mingw32/include/_mingw.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/stdarg.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_mingw_stat64.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/_timeval.h:
 
