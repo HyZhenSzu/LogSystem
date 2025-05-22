@@ -1,5 +1,7 @@
 项目：C++日志系统
 
+version：20250515
+
 参考：
 b站视频："https://www.bilibili.com/video/BV1Gg41187Xa/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=29baabfa819ef832123a5c0172d502d1"
 作者：天天写乱码
@@ -15,3 +17,4 @@ b站视频："https://www.bilibili.com/video/BV1Gg41187Xa/?spm_id_from=333.1007.
 2. 多文件编译：CMake version 4.0.2
 3. 链接器：mingw64 version 15.0.1
 
+version：20250522

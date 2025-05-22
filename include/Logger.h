@@ -1,7 +1,8 @@
 #pragma once
 
-#include <string>
+#include "LogQueue.h"
 #include <fstream>
+#include <thread>
 
 namespace Hyzhen{
 namespace Utility{
@@ -50,6 +51,8 @@ namespace Utility{
         Logger();
         ~Logger();
 
+        void processQueue();
+
     private:
         std::string m_fileName;
         std::ofstream m_fOut;
@@ -62,6 +65,11 @@ namespace Utility{
 
         // the unique instance in the whole program.
         static Logger *m_instance;
+
+        // a log queue to store and consume the log messages.
+        LogQueue m_queue_;
+        std::thread m_workerThread_;
+        std::atomic<bool> b_is_running_{false};
     };
     
 }

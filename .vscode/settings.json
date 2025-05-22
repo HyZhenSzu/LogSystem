@@ -70,6 +70,13 @@
     "xutility": "cpp",
     "memory_resource": "cpp",
     "string_view": "cpp",
-    "text_encoding": "cpp"
+    "text_encoding": "cpp",
+    "condition_variable": "cpp",
+    "cstdarg": "cpp",
+    "mutex": "cpp",
+    "ratio": "cpp",
+    "semaphore": "cpp",
+    "stop_token": "cpp",
+    "thread": "cpp"
   }
 }

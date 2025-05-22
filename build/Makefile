@@ -135,6 +135,30 @@ my_LogSystem/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_LogSystem.dir\build.make CMakeFiles/my_LogSystem.dir/build
 .PHONY : my_LogSystem/fast
 
+src/LogQueue.obj: src/LogQueue.cpp.obj
+.PHONY : src/LogQueue.obj
+
+# target to build an object file
+src/LogQueue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_LogSystem.dir\build.make CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj
+.PHONY : src/LogQueue.cpp.obj
+
+src/LogQueue.i: src/LogQueue.cpp.i
+.PHONY : src/LogQueue.i
+
+# target to preprocess a source file
+src/LogQueue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_LogSystem.dir\build.make CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.i
+.PHONY : src/LogQueue.cpp.i
+
+src/LogQueue.s: src/LogQueue.cpp.s
+.PHONY : src/LogQueue.s
+
+# target to generate assembly for a file
+src/LogQueue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\my_LogSystem.dir\build.make CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.s
+.PHONY : src/LogQueue.cpp.s
+
 src/Logger.obj: src/Logger.cpp.obj
 .PHONY : src/Logger.obj
 
@@ -193,6 +217,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... my_LogSystem
+	@echo ... src/LogQueue.obj
+	@echo ... src/LogQueue.i
+	@echo ... src/LogQueue.s
 	@echo ... src/Logger.obj
 	@echo ... src/Logger.i
 	@echo ... src/Logger.s

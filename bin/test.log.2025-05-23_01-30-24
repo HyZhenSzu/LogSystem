@@ -1,0 +1,3 @@
+2025-05-15 15:02:59 FATAL C:\Code\LogSystem\src\main.cpp:18 Fatal errors, I don't want to see them.
+2025-05-23 01:30:24 DEBUG C:\Code\LogSystem\src\main.cpp:16 Test 1: Single thread debug logging.
+2025-05-23 01:30:24 ERROR C:\Code\LogSystem\src\main.cpp:17 Test 2: Single thread error logging.

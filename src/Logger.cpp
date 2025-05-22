@@ -11,13 +11,15 @@ using namespace Hyzhen::Utility;
 void Logger::rotate()
 {
     close();
+    // get current time as the name of the new file.
     time_t ticks = time(nullptr);
     struct tm *ptm = localtime(&ticks);
     char timestamp[32];
     memset(timestamp, 0, sizeof(timestamp));
     strftime(timestamp, sizeof(timestamp), ".%Y-%m-%d_%H-%M-%S", ptm);
     std::string fileName = m_fileName + timestamp;
-    std::string base = fileName;
+    
+    std::string base = fileName; 
     int suffix = 1;
     while(rename(m_fileName.c_str(), fileName.c_str()) != 0)
     {
@@ -50,10 +52,13 @@ void Logger::log(LogLevel level, const char *filename, int line, const char *for
         return;
     }
 
-    if(m_fOut.fail())
-    {
-        throw std::logic_error("Failed to open file: " + m_fileName);
-    }
+    // if(m_fOut.fail())
+    // {
+    //     throw std::logic_error("Failed to open file: " + m_fileName);
+    // }
+
+    // store the log message.
+    std::string fmtMessage = "";
 
     // get current time
     time_t ticks = time(NULL);
@@ -75,8 +80,11 @@ void Logger::log(LogLevel level, const char *filename, int line, const char *for
         buffer[size] = 0;
 
         // std::cout << buffer << std::flush;
-        m_fOut << buffer;
-        m_currentLength += size;
+        // m_fOut << buffer;
+        // m_currentLength += size;
+        // delete[] buffer;
+
+        fmtMessage = buffer;
         delete[] buffer;
     }
 
@@ -91,19 +99,25 @@ void Logger::log(LogLevel level, const char *filename, int line, const char *for
         va_start(arg_ptr, format);
         vsnprintf(content, size + 1, format, arg_ptr);
         va_end(arg_ptr);
-        m_fOut << content;
-        m_currentLength += size;
+        // m_fOut << content;
+        // m_currentLength += size;
+        // delete[] content;
+
+        fmtMessage += content;
         delete[] content;
     }
 
-    m_fOut << "\n";
-    m_fOut.flush();
+    // m_fOut << "\n";
+    // m_fOut.flush();
+
+    fmtMessage += "\n";
+    m_queue_.push(fmtMessage);
 
     // if the log file is full, rotate.
-    if(m_currentLength >= m_maxLength && m_maxLength > 0)
-    {
-        rotate();
-    }
+    // if(m_currentLength >= m_maxLength && m_maxLength > 0)
+    // {
+    //     rotate();
+    // }
 }
 
 
@@ -125,7 +139,11 @@ void Logger::open(std::string fileName)
 
 void Logger::close()
 {
-    m_fOut.close();
+    if(m_fOut.is_open())
+    {
+        m_fOut.flush();
+        m_fOut.close();
+    }
 }
 
 
@@ -138,14 +156,46 @@ Logger *Logger::getInstance()
     return m_instance;
 }
 
+
+
+void Logger::processQueue()
+{
+    if(m_fOut.fail())
+    {
+        throw std::logic_error("Failed to open file: " + m_fileName);
+    }
+    std::string message;
+    while(m_queue_.pop(message))
+    {
+        m_fOut << message;
+        m_currentLength += message.length();
+
+        if(m_currentLength >= m_maxLength && m_maxLength > 0)
+        {
+            rotate();
+        }
+    }   
+    m_fOut.flush();
+}
+
 Logger::Logger() : m_level(LogLevel::DEBUG), m_maxLength(0), m_currentLength(0)
 {
-
+    b_is_running_ = true;
+    // create a thread to process the log messages in queue, 
+    // and bind the Logger::processQueue method to it.
+    m_workerThread_ = std::thread(&Logger::processQueue, this);
 }
 
 Logger::~Logger()
 {
-
+    b_is_running_ = false;
+    m_queue_.shutdown();
+    if(m_workerThread_.joinable())
+    {
+        // wait for the thread to finish.
+        m_workerThread_.join();
+    }
+    close();
 }
 
 

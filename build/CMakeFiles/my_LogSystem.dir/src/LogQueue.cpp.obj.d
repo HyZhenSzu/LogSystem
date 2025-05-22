@@ -1,6 +1,5 @@
-CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: \
- C:\Code\LogSystem\src\Logger.cpp C:/Code/LogSystem/include/Logger.h \
- C:/Code/LogSystem/include/LogQueue.h \
+CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj: \
+ C:\Code\LogSystem\src\LogQueue.cpp C:/Code/LogSystem/include/LogQueue.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/queue \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/requires_hosted.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -146,40 +145,4 @@ CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/nested_exception.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/atomic \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/atomic_base.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/atomic_lockfree_defines.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/fstream \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/istream \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ios \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/ios_base.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/locale_classes.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/locale_classes.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/system_error \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/stdexcept \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/streambuf \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/streambuf.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/basic_ios.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/locale_facets.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/cwctype \
- C:/mingw64/x86_64-w64-mingw32/include/wctype.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/streambuf_iterator.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/locale_facets.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/basic_ios.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ostream \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/ostream.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/ostream.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/istream.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/codecvt.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/fstream.tcc \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/thread \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/std_thread.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/this_thread_sleep.h \
- C:/mingw64/x86_64-w64-mingw32/include/string.h \
- C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/stdarg.h \
- C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
- C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/iostream
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/atomic_lockfree_defines.h

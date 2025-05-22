@@ -71,11 +71,26 @@ include CMakeFiles/my_LogSystem.dir/flags.make
 CMakeFiles/my_LogSystem.dir/codegen:
 .PHONY : CMakeFiles/my_LogSystem.dir/codegen
 
+CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj: CMakeFiles/my_LogSystem.dir/flags.make
+CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj: CMakeFiles/my_LogSystem.dir/includes_CXX.rsp
+CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj: C:/Code/LogSystem/src/LogQueue.cpp
+CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj: CMakeFiles/my_LogSystem.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Code\LogSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj -MF CMakeFiles\my_LogSystem.dir\src\LogQueue.cpp.obj.d -o CMakeFiles\my_LogSystem.dir\src\LogQueue.cpp.obj -c C:\Code\LogSystem\src\LogQueue.cpp
+
+CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.i"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Code\LogSystem\src\LogQueue.cpp > CMakeFiles\my_LogSystem.dir\src\LogQueue.cpp.i
+
+CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.s"
+	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Code\LogSystem\src\LogQueue.cpp -o CMakeFiles\my_LogSystem.dir\src\LogQueue.cpp.s
+
 CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: CMakeFiles/my_LogSystem.dir/flags.make
 CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: CMakeFiles/my_LogSystem.dir/includes_CXX.rsp
 CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: C:/Code/LogSystem/src/Logger.cpp
 CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj: CMakeFiles/my_LogSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Code\LogSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Code\LogSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj -MF CMakeFiles\my_LogSystem.dir\src\Logger.cpp.obj.d -o CMakeFiles\my_LogSystem.dir\src\Logger.cpp.obj -c C:\Code\LogSystem\src\Logger.cpp
 
 CMakeFiles/my_LogSystem.dir/src/Logger.cpp.i: cmake_force
@@ -90,7 +105,7 @@ CMakeFiles/my_LogSystem.dir/src/main.cpp.obj: CMakeFiles/my_LogSystem.dir/flags.
 CMakeFiles/my_LogSystem.dir/src/main.cpp.obj: CMakeFiles/my_LogSystem.dir/includes_CXX.rsp
 CMakeFiles/my_LogSystem.dir/src/main.cpp.obj: C:/Code/LogSystem/src/main.cpp
 CMakeFiles/my_LogSystem.dir/src/main.cpp.obj: CMakeFiles/my_LogSystem.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Code\LogSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_LogSystem.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Code\LogSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_LogSystem.dir/src/main.cpp.obj"
 	C:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_LogSystem.dir/src/main.cpp.obj -MF CMakeFiles\my_LogSystem.dir\src\main.cpp.obj.d -o CMakeFiles\my_LogSystem.dir\src\main.cpp.obj -c C:\Code\LogSystem\src\main.cpp
 
 CMakeFiles/my_LogSystem.dir/src/main.cpp.i: cmake_force
@@ -103,19 +118,21 @@ CMakeFiles/my_LogSystem.dir/src/main.cpp.s: cmake_force
 
 # Object files for target my_LogSystem
 my_LogSystem_OBJECTS = \
+"CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj" \
 "CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj" \
 "CMakeFiles/my_LogSystem.dir/src/main.cpp.obj"
 
 # External object files for target my_LogSystem
 my_LogSystem_EXTERNAL_OBJECTS =
 
+C:/Code/LogSystem/bin/my_LogSystem.exe: CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj
 C:/Code/LogSystem/bin/my_LogSystem.exe: CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj
 C:/Code/LogSystem/bin/my_LogSystem.exe: CMakeFiles/my_LogSystem.dir/src/main.cpp.obj
 C:/Code/LogSystem/bin/my_LogSystem.exe: CMakeFiles/my_LogSystem.dir/build.make
 C:/Code/LogSystem/bin/my_LogSystem.exe: CMakeFiles/my_LogSystem.dir/linkLibs.rsp
 C:/Code/LogSystem/bin/my_LogSystem.exe: CMakeFiles/my_LogSystem.dir/objects1.rsp
 C:/Code/LogSystem/bin/my_LogSystem.exe: CMakeFiles/my_LogSystem.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Code\LogSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable C:\Code\LogSystem\bin\my_LogSystem.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Code\LogSystem\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable C:\Code\LogSystem\bin\my_LogSystem.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\my_LogSystem.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

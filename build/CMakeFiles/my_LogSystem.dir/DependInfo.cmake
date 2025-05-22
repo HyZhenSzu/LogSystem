@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Code/LogSystem/src/LogQueue.cpp" "CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj" "gcc" "CMakeFiles/my_LogSystem.dir/src/LogQueue.cpp.obj.d"
   "C:/Code/LogSystem/src/Logger.cpp" "CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj" "gcc" "CMakeFiles/my_LogSystem.dir/src/Logger.cpp.obj.d"
   "C:/Code/LogSystem/src/main.cpp" "CMakeFiles/my_LogSystem.dir/src/main.cpp.obj" "gcc" "CMakeFiles/my_LogSystem.dir/src/main.cpp.obj.d"
   )
