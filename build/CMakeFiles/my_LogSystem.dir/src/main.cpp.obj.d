@@ -150,16 +150,16 @@ CMakeFiles/my_LogSystem.dir/src/main.cpp.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/ctime \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/parse_numbers.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/chrono \
- C:/Code/LogSystem/include/Logger.h C:/Code/LogSystem/include/LogQueue.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/queue \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/deque \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_uninitialized.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_deque.h \
- C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/deque.tcc \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/vector \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_uninitialized.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_vector.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_bvector.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/vector.tcc \
+ C:/Code/LogSystem/include/Logger.h C:/Code/LogSystem/include/LogQueue.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/queue \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/deque \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_deque.h \
+ C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/deque.tcc \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_heap.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/bits/stl_queue.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/mutex \
